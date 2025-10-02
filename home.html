@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+        <meta charset="utf-8">
+        <meta name="author" content="WanderlustTravels">
+        <meta name="description" content="Task5.3D: Website project">
+        <title>Wanderlust Travels - Home</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    
+    <body>
+        <!-- Header -->
+        <div class="sticky-top">
+        <div class="bg-dark text-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+        <a href="home.html" class="logo d-flex align-items-center text-decoration-none">
+        <img src="Images/Logo.png" alt="Wanderlust Travels Logo" height="40" class="me-2">
+        <span class="fw-bold fs-5 text-white">Wanderlust Travels</span>
+        </a>
+        <div>
+            <!-- Search + Login Buttons -->
+            <form id="searchInput-form" class="d-flex" role="search">
+            <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+            <a href="login.html" class="btn btn-outline-success ms-2">Login</a>
+        </form>
+        </div>
+        </div>
+        </div>
+
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-auto gap-4">
+            <a class="nav-link" aria-current="page" href="aboutus.html">About Us</a>
+            <a class="nav-link" href="destinations.html">Destinations</a>
+            <a class="nav-link" href="/packages">Packages</a>
+            <a class="nav-link" href="specialoffers.html">Speacial Offers</a>
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+        </div>
+        <button id="darkModeToggle" class="btn btn-outline-dark ms-2">🌙 Dark Mode</button>
+        </div>
+        </div>
+        </nav>
+        </div>
+
+        <!-- Image Section -->
+        <section class="backgroundIMG">
+            <div class="backgroundIMG-search text-center">
+                <h1 class="text-white">Discover Your Next Holiday</h1>
+                <form id="tripSearchForm" class="row g-2 mt-3">
+                    <div class="col-md-4">
+                        <input type="text" id="destination" class="form-control" placeholder="Destination">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="date" id="date" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="number" id="travellers" class="form-control" placeholder="No of Travellers">
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary w-100" type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="container my-5">
+            <div class="text-center">
+                <h1 id="topic" class="mb-3">YOU WANT TO GO, BUT DON’T KNOW WHERE?</h1>
+                <p>No worries, that’s what we’re here for. Get some inspiration in our travel blog or call us for an appointment. 
+            We’ll find the right beach for you to relax in a hammock below the palm trees, or the right city to discover when 
+            you’re interested in different cultures.</p>
+            </div>
+        </section>
+        
+        <!-- Collapse -->
+         <section style="background-color: lightseagreen;">
+            <div class="container py-4">
+                <h2 class="text-center">Top 03 Beach Destinations</h2>
+                <!-- buttons row -->
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <div class="col">
+            <a class="btn btn-success w-100" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Bora Bora</a>
+            </div>
+            <div class="col">
+            <button class="btn btn-success w-100" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Maui</button>
+            </div>
+            <div class="col">
+            <button class="btn btn-success w-100" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Maldives</button>
+            </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Button Details -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+            <!-- 01 -->
+            <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body">
+                    <img src="Images/Borabora.jpg" alt="Bora Bora">
+                     <h5>Bora Bora</h5>
+                        <p>Famous for turquoise lagoons, overwater bungalows, and vibrant coral reefs. Perfect for honeymooners and luxury relaxation.</p>
+                </div>
+            </div>
+            </div>
+
+            <!-- 02 -->
+            <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card card-body">
+                    <img src="Images/Maui.jpg" alt="Bora Bora">
+                    <h5>Maui</h5>
+                    <p>Offers diverse beaches from golden sands to black volcanic shores. Great for surfing, whale watching, and scenic drives.</p>
+                </div>
+            </div>
+            </div>
+
+            <!-- 03 -->
+            <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample3">
+                <div class="card card-body">
+                    <img src="Images/Maldives2.jpg" alt="Bora Bora">
+                    <h5>Maldives</h5>
+                    <p>Known for private island resorts, crystal-clear waters, and abundant marine life. Perfect for diving and tropical getaways.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        
+
+        <!-- Popular Destinations -->
+        <section class="container my-5">
+        <h2 class="text-center mb-4">Popular Destinations</h2>
+        <div class="row">
+        <!-- Destination Cards -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="images/Paris.jpg" class="card-img-top" alt="Paris">
+                <div class="card-body">
+                    <h5 class="card-title">Paris, France</h5>
+                    <p class="card-text">Experience the beauty, romance and culture of Paris with an iconic paris landmark.</p>
+                    <a href="#" class="btn btn-success">View Packages</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3">
+            <div class="card">
+                <img src="images/Bali.jpg" class="card-img-top" alt="Bali">
+                <div class="card-body">
+                    <h5 class="card-title">Bali, Indonesia</h5>
+                    <p class="card-text">Experience the tropical paradise with beaches, temples and vibrant traditions.</p>
+                    <a href="#" class="btn btn-success">View Packages</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="images/Santorini.jpg" class="card-img-top" alt="Santorini">
+                <div class="card-body">
+                    <h5 class="card-title">Santorini, Greece</h5>
+                    <p class="card-text">A stunning island famous for its whitewashed houses and blue-domed churches.</p>
+                    <a href="#" class="btn btn-success">View Packages</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="images/Kyoto.jpg" class="card-img-top" alt="Kyoto">
+                <div class="card-body">
+                    <h5 class="card-title">Kyoto, Japan</h5>
+                    <p class="card-text">A cultural gem filled with temples, breathtaking views, gardens and traditional tea houses.</p>
+                    <a href="#" class="btn btn-success">View Packages</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        </section>
+
+        <!-- Featured Packages -->
+        <section class="container my-5">
+        <h2 class="text-center mb-4">Featured Packages</h2>
+        <div class="row">
+        <!-- Packages Cards -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="images/Maldives.jpg" class="card-img-top" alt="Maldives">
+                <div class="card-body">
+                    <h5 class="card-title">Maldives Luxury Retreat</h5>
+                    <p class="card-text">5 Days / 4 Nights <br> From $3000</p>
+                    <a href="#" class="btn btn-success">View Packages</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="images/Swiss.jpg" class="card-img-top" alt="Swis">
+                <div class="card-body">
+                    <h5 class="card-title">Swiss Alps Adventure</h5>
+                    <p class="card-text">7 Days / 6 Nights <br> From $4500</p>
+                    <a href="#" class="btn btn-success">View Packages</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="images/Kenya.jpg" class="card-img-top" alt="Kenya">
+                <div class="card-body">
+                    <h5 class="card-title">Safari in Kenya</h5>
+                    <p class="card-text">6 Days / 5 Nights <br> From $3800</p>
+                    <a href="#" class="btn btn-success">View Packages</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="images/Newzealand.jpg" class="card-img-top" alt="Kenya">
+                <div class="card-body">
+                    <h5 class="card-title">New Zealand Nature Explorer</h5>
+                    <p class="card-text">8 Days / 7 Nights <br> From $4200</p>
+                    <a href="#" class="btn btn-success">View Packages</a>
+                </div>
+            </div>
+        </div>
+         </div>
+        </section>
+
+        <!-- Speacial Offers -->
+        <section class="container my-5">
+        <h2 class="text-center mb-4">Speacial Offers</h2>
+        <div class="row">
+        <!-- Offers Cards -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="images/Dubai.jpg" class="card-img-top" alt="Dubai">
+                <div class="card-body">
+                    <h5 class="card-title">Dubai Desert Safari - 20% Off</h5>
+                    <p class="card-text">Reserve before Jan 15 and save big.</p>
+                    <a href="#" class="btn btn-success">View Packages</a>
+                </div>
+            </div>
+        </div>
+         </div>
+        </section>
+
+        <footer class="bg-dark text-white text-center py-3 mt-5">
+            &copy; <span id="year"></span> Wanderlust Travels | Discover Your Next Adventure <br>
+            Last updated: <span id="lastUpdated"></span> <br>
+            Contact: <a href="mailto:info@wanderlusttravels.com">info@wanderlusttravels.com</a>
+        </footer>
+  
+    <script src="script.js"></script>
+    </body>
+</html>

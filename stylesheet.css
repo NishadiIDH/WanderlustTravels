@@ -1,0 +1,188 @@
+.backgroundIMG{
+    background-image: url('Images/Beach.jpg'); 
+    background-size: cover;     
+    background-position: center; 
+    padding: 80px 0; 
+
+    display: flex;              
+    justify-content: center;    
+    align-items: center;        
+    min-height: 400px;
+}
+
+.backgroundIMG-search{
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.login-container{
+    background-color: whitesmoke;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.sticky-top{
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1030;
+}
+
+#sidebar {
+  position: sticky;
+  top: 140px;
+  align-self: flex-start;
+}
+
+#topic {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lightseagreen;
+}
+
+.logo-image {
+    display: block;
+    margin: 0 auto;
+    border: 5px solid black;
+    border-radius: 10px; 
+}
+
+.aboutusContent {
+    margin-bottom: 60px;
+}
+
+.destination-row {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.destination-row:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+.destination-img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.special-offer-img {
+    width: 250px;
+}
+
+#toggleBtn1, #toggleBtn2, #toggleBtn3, #toggleBtn4 {
+    background-color: #007BFF; 
+    color: white;             
+    border: none;              
+    padding: 8px 16px;         
+    border-radius: 5px;        
+    cursor: pointer;           
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+#toggleBtn1:hover, #toggleBtn2:hover, #toggleBtn3:hover, #toggleBtn4:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+ul {
+    line-height: 30px;
+    color: white;
+}
+
+/* Parallax section */
+.parallax {
+  background-image: url('Images/Background.jpg');
+  height: 500px; 
+  background-attachment: fixed; /* Key property for parallax */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.parallax h1 {
+  line-height: 2;   /* spacing between lines */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body.dark-mode .navbar,
+body.dark-mode footer {
+  background-color: #1e1e1e !important;
+}
+
+body.dark-mode .card {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+body.dark-mode a {
+  color: #80c0ff; /* brighter links for visibility */
+}
+
+.packages-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.package-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.package-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-item {
+  width: 250px;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+.gallerybtn {
+    background-color: lightgreen;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    
+}
+
+.gallerybtn:hover {
+  background-color: #45a049; /* darker green */
+}

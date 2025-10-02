@@ -1,0 +1,20 @@
+[
+  { "id": 1, "name": "Bali", "image": "images/Bali.jpg" },
+  { "id": 2, "name": "Banff", "image": "images/Banff.jpg" },
+  { "id": 3, "name": "Dubai", "image": "images/Dubai.jpg" },
+  { "id": 4, "name": "Kenya", "image": "images/Kenya.jpg" },
+  { "id": 5, "name": "Kyoto", "image": "images/Kyoto.jpg" },
+  { "id": 6, "name": "Maldives", "image": "images/Maldives.jpg" }, 
+  { "id": 7, "name": "Paris", "image": "images/OffParis.jpg" },
+  { "id": 8, "name": "Bali", "image": "images/OffBali.jpg" },
+  { "id": 9, "name": "Dubai", "image": "images/OffDubai.jpg" },
+  { "id": 10, "name": "Kyoto", "image": "images/OffKyoto.jpg" },
+  { "id": 11, "name": "Maldives", "image": "images/OffMaldives.jpg" },
+  { "id": 12, "name": "Santorini", "image": "images/OffSantorini.jpg" },
+  { "id": 13, "name": "Petra", "image": "images/Petra.jpg" },
+  { "id": 14, "name": "Queenstown", "image": "images/Queenstown.jpg" },
+  { "id": 15, "name": "Reykjavik", "image": "images/Reykjavik.jpg" },
+  { "id": 16, "name": "Santorini", "image": "images/Santorini.jpg" },
+  { "id": 17, "name": "Paris", "image": "images/Paris.jpg" },
+  { "id": 18, "name": "Swiss", "image": "images/Swiss.jpg" }
+]

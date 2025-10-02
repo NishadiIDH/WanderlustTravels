@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+        <meta charset="utf-8">
+        <meta name="author" content="WanderlustTravels">
+        <meta name="description" content="Task5.3D: Website project">
+        <title>Wanderlust Travels - About Us</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    
+    <body>
+        <!-- Header -->
+        <div class="sticky-top">
+        <div class="bg-dark text-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+        <a href="home.html" class="llogo d-flex align-items-center text-decoration-none">
+        <img src="Images/Logo.png" alt="Wanderlust Travels Logo" height="40" class="me-2">
+        <span class="fw-bold fs-5 text-white">Wanderlust Travels</span>
+        </a>
+        <div>
+            <!-- Search + Login Buttons -->
+            <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+            <a href="login.html" class="btn btn-outline-success ms-2">Login</a>
+        </form>
+        </div>
+        </div>
+        </div>
+
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-auto gap-4">
+            <a class="nav-link" aria-current="page" href="aboutus.html">About Us</a>
+            <a class="nav-link" href="destinations.html">Destinations</a>
+            <a class="nav-link" href="/packages">Packages</a>
+            <a class="nav-link" href="specialoffers.html">Speacial Offers</a>
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+        </div>
+        </div>
+        </div>
+        </nav>
+        </div>
+
+        <!-- Parralax Section -->
+        <section class="parallax"><h1>Welcome to Wanderlust Travels<br>
+        "Where Every Trip Becomes a Story"</h1></section>
+
+        <!-- Content -->
+        <section class="m-4">
+        <div class="row">
+        <div class="col-2" id="sidebar">
+            <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+            <nav class="nav nav-pills flex-column">
+                <a class="nav-link" href="#item-1">Our Name</a>
+                <a class="nav-link" href="#item-2">Logo</a>
+                <a class="nav-link" href="#item-3">About Us</a>
+                <a class="nav-link" href="#item-4">Our Story</a>
+                <a class="nav-link" href="#item-5">Our Mission</a>
+                <a class="nav-link" href="#item-6">Our Values</a>
+                <a class="nav-link" href="#item-7">Customer Reviews</a>
+                <a class="nav-link" href="#item-8">Why Choose Us</a>
+                <a class="nav-link" href="#item-9"><button class="gallerybtn" onclick="location.href='/gallery'">See All Images</button></a>
+            </nav>
+            </nav>
+        </div>
+
+        <div class="col-10">
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+                <div id="item-1" class="aboutusContent">
+                    <h4>Our Name</h4>
+                    <p>Wanderlust Travels Pty Ltd (Australia)</p>
+                </div>
+                <div id="item-2" class="aboutusContent">
+                    <h4>Logo</h4>
+                    <img src="Images/Logo.png" alt="companyLogo" class="logo-image" height="250px">
+                </div>
+                <div id="item-3" class="aboutusContent">
+                    <h4>About Us - Wanderlust Travels</h4>
+                    <p>At Wanderlust Travels, we believe that travel is more than just visiting new places. It's about creating unforgettable memories, embracing new cultures, and finding adventure in every moment.
+                    From the moment you book with us to the day you return home, our dedicated team ensures every detail of your journey is taken care of. We handpick destinations, curate unique experiences, and work with trusted local partners to bring you closer to the heart of each location you visit.
+                    <br>Whether you’re dreaming of a romantic getaway, a family holiday, or a solo adventure, we tailor every trip to match your style, pace, and passions. With our focus on safety, comfort, and exceptional service, you can travel with confidence, knowing we’re with you every step of the way.
+                    <br>For us, travel is not just a service — it’s a passion. And our greatest reward is seeing our customers return with smiles, stories, and a desire to explore even more of the world.</p>
+                </div>
+                <div id="item-4" class="aboutusContent">
+                    <h5>Our Story</h5>
+                    <p>Founded with a passion for exploration, Wanderlust Travels began as a small team of travel enthusiasts dedicated to making dream vacations a reality. Over the years, we’ve grown into a trusted travel partner for countless adventurers, offering tailor-made packages to breathtaking destinations around the globe.
+                        <br>What started as a shared love for discovering hidden gems has evolved into a mission to inspire others to see the world. From bustling cities to serene beaches, we’ve helped travelers create memories that last a lifetime. Our journey has been shaped by the experiences of our customers, the partnerships we’ve built with local communities, and our constant drive to deliver exceptional service.
+                        <br>Every trip we design is infused with our core values: authenticity, quality, and a genuine commitment to your happiness. As we continue to grow, one thing remains unchanged — our belief that travel has the power to transform, connect, and inspire.
+                    </p>
+                </div>
+                <div id="item-5" class="aboutusContent">
+                    <h5>Our Mission</h5>
+                    <p>Our mission is simple — to inspire and empower people to explore the world with confidence, comfort, and excitement. Whether you’re chasing the Northern Lights, wandering through ancient cities, or relaxing on tropical beaches, we’re here to make it happen.
+                        <br>We believe that travel should be accessible, stress-free, and deeply rewarding. That’s why we work tirelessly to craft personalized itineraries, partner with trusted local guides, and provide transparent pricing with no hidden surprises. Our goal is to remove the hassles of planning, so you can focus on what matters most — immersing yourself in the journey.
+                        <br>At Wanderlust Travels, every trip is more than a holiday; it’s an opportunity to connect with cultures, meet new people, and return home with stories you’ll cherish forever.
+                    </p>
+                </div>
+                <div id="item-6" class="aboutusContent">
+                    <h4>Our Values</h4>
+                    <ol>
+                        <li>Customer-First Approach: Your satisfaction is our top priority.</li>
+                        <li>Authentic Experiences: We curate journeys that let you truly connect with local cultures.</li>
+                        <li>Transparency & Trust: No hidden fees, no surprises — just honest, quality service.</li>
+                        <li>Expert Guidance: Our travel specialists have first-hand experience with every destination we recommend.</li>
+                        <li>24/7 Support: Assistance before, during, and after your trip — we’re always here for you.</li>
+                        <li>Tailored Itineraries: Every journey is crafted to match your preferences, pace, and passions.</li>
+                        <li>Global Network: Access to exclusive deals and experiences through our trusted worldwide partners.</li>
+                        <li>Safety & Security: We prioritize your wellbeing with carefully vetted accommodations and transport.</li>
+                    </ol>
+                </div>
+                <div id="item-7" class="aboutusContent">
+                    <h4>Customer Reviews</h4>
+                    <ol>
+                        <li><i>"Wanderlust Travels made our honeymoon unforgettable! Every detail was perfect."</i> – Emily & Jake</li>
+                        <li><i>"From booking to return, they handled everything seamlessly. Highly recommend!"</i> – Rajesh K.</li>
+                        <li><i>"We booked a family trip to Bali and it was flawless. The kids loved the activities, and we got plenty of time to relax. Can’t wait for our next booking!"</i> – Samantha L.</li>
+                        <li><i>"They understood exactly what I wanted from my solo trip to Europe. The itinerary was balanced, safe, and filled with hidden gems I’d never have found on my own."</i> – Daniel P.</li>
+                        <li><i>"Customer service was amazing. Even when our flight got delayed, Wanderlust handled the changes without any extra cost to us."</i> – Hannah R.</li>
+                        <li><i>"It felt like they were as excited about my trip as I was! Their passion for travel really shines through."</i> – Michael W.</li>
+                    </ol>
+                </div>
+                <div id="item-8" class="aboutusContent">
+                    <h5>Why Choose Us</h5>
+                    <p>With years of experience, a dedicated support team, and a network of trusted partners worldwide, we ensure every trip is smooth, stress-free, and filled with joy.<br>
+                        Your next adventure starts here — let’s make it unforgettable.</p>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+        </section>
+    
+        <footer class="bg-dark text-white text-center py-3 mt-5">
+            &copy; <span id="year"></span> Wanderlust Travels | Discover Your Next Adventure <br>
+            Last updated: <span id="lastUpdated"></span> <br>
+            Contact: <a href="mailto:info@wanderlusttravels.com">info@wanderlusttravels.com</a>
+        </footer>
+  
+    <script src="script.js"></script>
+    </body>
+</html>

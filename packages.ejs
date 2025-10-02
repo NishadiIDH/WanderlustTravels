@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+        <meta charset="utf-8">
+        <meta name="author" content="WanderlustTravels">
+        <meta name="description" content="Task5.3D: Website project">
+        <title>Wanderlust Travels - Packages</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <body>
+        <%- include('partials/header') %>
+        <%- include('partials/navbar') %>
+
+        <div class="packages-container">
+        <% packages.forEach(pkg => { %>
+            <div class="package-card">
+            <img src="<%= pkg.image %>" alt="<%= pkg.name %>">
+            <h2><%= pkg.name %></h2>
+            <p><%= pkg.description %></p>
+                <p><strong>Price:</strong> <%= pkg.price %></p>
+                <p><strong>Duration:</strong> <%= pkg.duration %></p>
+            </div>
+        <% }) %>
+        </div>
+
+               <!-- toggle btn -->
+        <section style="padding: 30px;">
+        <div style="padding: 30px; background-color: lightblue;">
+        <h2 style="color: blue; text-align: center;">Package Types</h2>
+
+        <div style="margin-bottom: 20px;">
+        <h3>Adventure Tours</h3>
+            <p>Thrilling experiences for adrenaline seekers, including trekking, rafting, and outdoor exploration.<br>Perfect for adventure lovers, solo travelers, or groups looking for excitement.</p>
+
+            <button id="toggleBtn1">Show More</button>
+            <div id="extraContent1" style="display:none;">
+                <ul>
+                    <li>Nepal (Himalayan Trekking)</li>
+                    <li>New Zealand (Queenstown)</li>
+                    <li>Costa Rica (Rainforest Adventures)</li>
+                </ul>
+            </div>
+        </div>
+        <div style="margin-bottom: 20px;">
+        <h3>Family Holiday</h3>
+            <p>Fun-filled vacations designed for families with activities for all ages. Comfortable accommodations and kid-friendly attractions are included.<br>Ideal for families, parents with children, or multi-generational groups.</p>
+
+            <button id="toggleBtn2">Show More</button>
+            <div id="extraContent2" style="display:none;">
+                <ul>
+                    <li>Orlando, USA (Disney World & Universal Studios)</li>
+                    <li>Orlando, USA (Disney World & Universal Studios)</li>
+                    <li>Bali, Indonesia (Beach Resorts & Cultural Tours)</li>
+                </ul>
+            </div>
+        </div>
+        <div style="margin-bottom: 20px;">
+        <h3>Luxury Escapes</h3>
+            <p>High-end vacations focused on comfort, luxury, and exclusive experiences. Includes 5-star resorts, private tours, and gourmet dining.<br>Couples, honeymooners, and travelers seeking premium experiences.</p>
+
+            <button id="toggleBtn3">Show More</button>
+            <div id="extraContent3" style="display:none;">
+                <ul>
+                    <li>Maldives (Overwater Villas & Private Beaches)</li>
+                    <li>Dubai, UAE (Luxury Resorts & Desert Safaris)</li>
+                    <li>Santorini, Greece (Luxury Cliffside Hotels & Yacht Tours)</li>
+                </ul>
+            </div>
+        </div>
+        <div style="margin-bottom: 20px;">
+        <h3>Budget Trips</h3>
+            <p>Affordable travel packages without compromising on experience. Includes budget-friendly hotels, sightseeing, and group tours.<br>Students, solo travelers, or anyone seeking cost-effective vacations.</p>
+
+            <button id="toggleBtn4">Show More</button>
+            <div id="extraContent4" style="display:none;">
+                <ul>
+                    <li>Vietnam (Backpacking & Cultural Tours)</li>
+                    <li>Thailand (Bangkok & Island Hopping)</li>
+                    <li>Portugal (Lisbon & Porto Budget Tours)</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        </section>
+
+        <!-- Traveler Testimonials -->
+        <section class="container my-5">
+        <h2 class="text-center mb-4">Traveler Testimonials</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <p>"An unforgettable experience! The Maldives retreat was pure luxury."</p>
+                    <h6>- Sarah L.</h6>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <p>"Santorini sunsets are breathtaking. Great service from Wanderlust Travels."</p>
+                    <h6>- James K.</h6>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <p>"The Kenya safari was thrilling! Perfect for adventure lovers."</p>
+                    <h6>- Emily R.</h6>
+                </div>
+            </div>
+        </div>
+        </section>
+        <script src="script.js"></script>
+
+        <%- include('partials/footer') %>
+    </body>
+</html>
